@@ -1,1 +1,1 @@
-import {defineConfig} from "vite";import react from "@vitejs/plugin-react";import tailwindcss from "@tailwindcss/vite";export default defineConfig({base:"/scottdialo.com/",plugins:[react(),tailwindcss()]});
+import {defineConfig} from "vite";import react from "@vitejs/plugin-react";import tailwindcss from "@tailwindcss/vite";export default defineConfig({base:"/scottdialo.com/",plugins:[react(),tailwindcss()],build:{rollupOptions:{input:{main:"index.html",about:"about/index.html",hiring:"hiring/index.html",resume:"resume/index.html"}}}});
